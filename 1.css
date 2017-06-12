@@ -1,0 +1,12 @@
+body{
+	margin: 0px;
+	padding: 20px;
+	width: 500px;
+	height: 500px;
+	border: 1px solid black;
+}
+h1{
+	color: green;
+	margin: 0px;
+	padding: 10px 0px;
+}
