@@ -17,3 +17,15 @@ myObj.setObj1(4);
 document.writeln(myObj.getObj1());
 var logo = document.body.querySelector(".icon");
 logo.src = "knead.gif";
+
+var canvas = document.querySelector("canvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "red";
+ctx.strokeStyle = "black";
+ctx.lineWidth = "2";
+ctx.strokeRect(0,0,70,70);
+var image = new Image();
+image.src = "popcorn.gif";
+//ctx.drawImage(image,100,0);
+image.onload = function(){
+ctx.drawImage(image, 0, 0);}
