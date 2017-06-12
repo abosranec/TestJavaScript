@@ -9,7 +9,7 @@ var myObj = {
 		return this.obj1;
 	}
 };
-
+//debugger;
 for(var obj in myObj){
 	document.writeln(""+obj);
 }
