@@ -29,3 +29,19 @@ image.src = "popcorn.gif";
 //ctx.drawImage(image,100,0);
 image.onload = function(){
 ctx.drawImage(image, 0, 0);}
+
+//reaction on change
+'use strict'
+var input1 = document.getElementById("input1");
+var output1 = document.getElementById('output1');
+function setDouble(input){
+	return input * 2;
+}
+input1.value = 2;
+output1.value = 2;
+output1.value = setDouble(input1.value);
+document.writeln(myObj.getObj1());
+input1.onchange = function(){
+	output1.value = setDouble(input1.value);
+}
+output1.value;
